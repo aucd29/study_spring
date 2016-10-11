@@ -1,16 +1,18 @@
-package com.ex.board1.data;
+package com.ex.login.data;
 
 public class BoardVo {
 	private int seq;
 	private String title;
 	private String writer;
+	private String content;
 	private int cnt;
 	
 	// http://stackoverflow.com/questions/25272543/no-default-constructor-found-nested-exception-is-java-lang-nosuchmethodexceptio
-	public BoardVo(int seq, String title, String writer, int cnt) {
+	public BoardVo(int seq, String title, String writer, String content, int cnt) {
 		this.seq = seq;
 		this.title = title;
 		this.writer = writer;
+		this.content = content;
 		this.cnt = cnt;
 	}
 	
@@ -44,5 +46,13 @@ public class BoardVo {
 
 	public void setCnt(int cnt) {
 		this.cnt = cnt;
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
 	}
 }

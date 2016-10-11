@@ -26,7 +26,7 @@
 <c:forEach var="data" items="${list2}">
 <tr>
 	<td>${data.getSeq()}</td>
-	<td>${data.getTitle()}</td>
+	<td><a href="./read">${data.getTitle()}</a></td>
 	<td>${data.getWriter()}</td>
 	<td>${data.getCnt()}</td>
 </tr>
