@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="com.ex.board2">
+	<logger name="com.ex.board3">
 		<level value="info" />
 	</logger>
 	
@@ -31,11 +31,21 @@
 	<logger name="org.springframework.web">
 		<level value="info" />
 	</logger>
-	
-	<logger name="org.springframework.jdbc.core">
+
+	<logger name="org.apache.ibatis">
 		<level value="debug" />
 	</logger>
 	
+	<!-- Query Loggers -->
+    <logger name="jdbc.sqlonly" additivity="false">  
+        <level value="INFO"/>  
+        <appender-ref ref="console"/>  
+    </logger>
+     
+    <logger name="jdbc.resultsettable" additivity="false">  
+        <level value="INFO"/>  
+        <appender-ref ref="console"/>  
+    </logger>  
 
 	<!-- Root Logger -->
 	<root>
